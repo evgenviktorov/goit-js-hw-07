@@ -1,0 +1,244 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fafafa;
+  color: #212121;
+  line-height: 1.5;
+}
+
+/* startTASK#1 */
+
+ul#categories {
+  list-style: none;
+  padding: 24px;
+  margin: 0 auto;
+  width: 440px;
+}
+
+.item {
+  background-color: #f5f4fd;
+  border-radius: 16px;
+  padding: 16px;
+  margin-bottom: 24px;
+}
+
+.item h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.33333;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+.item ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.item li {
+  padding: 8px 16px;
+  margin-bottom: 12px;
+  border: 1px solid #999;
+  border-radius: 8px;
+  background-color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  transition: all 0.2s ease;
+}
+
+.item li:hover {
+  background-color: #f0f0ff;
+}
+
+/* endTASK#1 */
+
+/* startTASK#2 */
+
+.gallery {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 48px;
+  column-gap: 24px;
+  justify-content: center;
+  max-width: 1140px;
+}
+
+.gallery-item {
+  flex: 0 0 calc((100% - 48px) / 3);
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.gallery-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  aspect-ratio: 6 / 5;
+}
+
+@media screen and (max-width: 900px) {
+  .gallery-item {
+    flex: 0 0 calc((100% - 24px) / 2);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .gallery-item {
+    flex: 0 0 100%;
+  }
+}
+
+/* endTASK#2 */
+
+/* startTASK#3 */
+
+#name-input {
+  display: block;
+  width: 100%;
+  max-width: 392px;
+  padding: 12px 16px;
+  font-size: 16px;
+  border: 1px solid #999;
+  border-radius: 8px;
+  background-color: #fff;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+}
+
+h1 {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 700;
+  color: #2e2f42;
+  font-family: "Montserrat", sans-serif;
+}
+
+#name-output {
+  font-weight: 700;
+  color: #2e2f42;
+  font-family: "Montserrat", sans-serif;
+}
+
+.task-3 {
+  margin: auto;
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 24px;
+  width: 100%;
+  max-width: 432px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* endTASK#3 */
+
+/* startTASK#4 */
+
+.login-form {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 24px;
+  max-width: 480px;
+  margin: 40px auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.login-form label {
+  display: flex;
+  flex-direction: column;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #2e2f42;
+  gap: 8px;
+}
+
+.login-form input {
+  padding: 12px 16px;
+  font-size: 16px;
+  border: 1px solid #999;
+  border-radius: 8px;
+  background-color: #fff;
+  font-family: "Montserrat", sans-serif;
+}
+
+.login-form button {
+  align-self: flex-start;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  background-color: #4e75ff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+  transition: background-color 0.2s ease;
+}
+
+.login-form button:hover {
+  background-color: #3b64f4;
+}
+
+/* endTASK#4 */
+
+/* startTASK#5 */
+.widget {
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 40px 24px;
+  max-width: 420px;
+  margin: 40px auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+
+.widget p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  color: #2e2f42;
+  margin-bottom: 24px;
+}
+
+.widget .color {
+  font-weight: 600;
+  color: #2e2f42;
+}
+
+.change-color {
+  padding: 12px 24px;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  color: #fff;
+  background-color: #4e75ff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.change-color:hover {
+  background-color: #3b64f4;
+}
+
+/* endTASK#5 */
