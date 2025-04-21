@@ -1,7 +1,7 @@
-const inputRef = document.querySelector('#name-input');
-const outputRef = document.querySelector('#name-output');
+const input = document.querySelector('#name-input');
+const output = document.querySelector('#name-output');
 
-inputRef.addEventListener('input', () => {
-  const sanitizedValue = inputRef.value.replace(/\s+/g, ' ').trim();
-  outputRef.textContent = sanitizedValue === '' ? 'Anonymous' : sanitizedValue;
+input.addEventListener('input', () => {
+  const clearValue = input.value.replace(/\s+/g, ' ').trim();
+  output.textContent = clearValue === '' ? 'Anonymous' : clearValue;
 });
